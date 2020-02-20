@@ -14,8 +14,11 @@ class Song
     @@all 
   end 
   
-  def artist_name=(name)
-    Artist.find_or_create_by_name(name)
+  def artist=(artist)
+    if name.class == Artist 
+      @artist = artist 
+    else 
+      @artist = Artist.find_or_create_bye_name(artist)
   end 
   
   def self.new_by_filename(name)
