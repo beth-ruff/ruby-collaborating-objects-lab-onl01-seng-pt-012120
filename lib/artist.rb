@@ -8,7 +8,7 @@ class Artist
     @name = name 
   end 
 
-  def Artist.all(name)
+  def Artist.all
     @@all << name 
   end 
   
