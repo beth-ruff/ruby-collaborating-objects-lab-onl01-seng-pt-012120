@@ -14,7 +14,7 @@ class Song
   end 
   
   def artist_name=(artist)
-    if artist_name.class == Artist 
+    if artist.class == Artist 
       @artist = artist 
     else 
       @artist = Artist.find_or_create_by_name(artist)
