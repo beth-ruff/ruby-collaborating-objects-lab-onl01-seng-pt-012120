@@ -18,7 +18,7 @@ class Artist
   end 
   
   def songs
-    Song.all.select {|song| song.artist == self}
+    Song.all.find do |song|
   end 
   
 end
