@@ -9,7 +9,7 @@ class Artist
   end 
 
   def Artist.all
-    
+    artist = Artist.new
     @@all
   end 
   
